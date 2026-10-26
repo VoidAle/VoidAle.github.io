@@ -36,7 +36,8 @@
 .hero-name{position:relative;z-index:1;padding:40px 0}
 .hero-kicker{display:block;font:12px Consolas,monospace;letter-spacing:1px;color:#899b78;animation:hero-arrive .9s both}
 .hero-kicker.closing{margin-left:5px;color:#59634e;animation-delay:.3s}
-.hero h1{font-size:clamp(100px,18vw,270px);background:linear-gradient(115deg,#fff 15%,#deded5 45%,#7d8a70 100%);background-clip:text;-webkit-text-fill-color:transparent;animation:hero-arrive 1s .1s both}
+/* Leave room for the final glyph when painting gradient text with negative tracking. */
+.hero h1{font-size:clamp(100px,18vw,270px);padding-inline-end:.14em;background:linear-gradient(115deg,#fff 15%,#deded5 45%,#7d8a70 100%);background-clip:text;-webkit-text-fill-color:transparent;animation:hero-arrive 1s .1s both}
 .hero h1>span{-webkit-text-fill-color:var(--accent)}
 .orbit-label{position:absolute;font:9px Consolas,monospace;letter-spacing:3px;color:#adbf99;border:1px solid #a0b18533;border-radius:20px;padding:9px 13px;background:#0c100bec;white-space:nowrap}
 .label-top{top:12%;right:0;animation:code-float 6s ease-in-out infinite}.label-bottom{bottom:8%;left:0;animation:code-float 7s -3s ease-in-out infinite}
