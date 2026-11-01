@@ -111,3 +111,7 @@ For these and/or other purposes and motivations, and without any expectation of 
     4. Affirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.
 
 For more information, please see <https://creativecommons.org/publicdomain/zero/1.0>.
+
+## Caratteri (DM Sans, Manrope)
+
+Distribuiti con licenza SIL Open Font License 1.1 (https://openfontlicense.org). File ottenuti da Google Fonts.
