@@ -171,3 +171,27 @@ html[data-motion="reduced"] .project-card:hover,html[data-motion="reduced"] .pro
 .section-label span:first-child{color:#d0d0d0}
 footer{color:#9a9a9a}
 .project-shots .shot-side{width:60%}
+
+/* Timeline: schede e punti luminosi */
+.timeline:before{left:158px;width:2px;border-radius:2px;background:linear-gradient(#5a5a5a,#2c2c2c 85%,transparent)}
+.t-item{padding-bottom:26px}
+.t-item>div{border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px;background:linear-gradient(150deg,#161616,#0e0e0e);transition:transform .3s,border-color .3s,box-shadow .3s}
+.t-item:hover>div{transform:translateX(6px);border-color:#5e5e5e;box-shadow:0 14px 36px #00000055}
+.t-item:before{top:26px;left:152px;width:14px;height:14px;background:#0c0c0c;border:2px solid #8a8a8a}
+.t-item time{padding-top:22px}
+.t-item.current>div{border-color:#6a6a6a;background:linear-gradient(150deg,#1f1f1f,#111);box-shadow:0 0 0 1px #e5e5e510,0 18px 50px #00000066}
+.t-item.current:before{box-shadow:0 0 0 6px #e5e5e51a,0 0 22px #e5e5e544}
+.t-item p{max-width:none}
+.t-item .tag{margin-top:2px}
+.timeline-tip{display:grid;grid-template-columns:auto minmax(0,1fr);gap:28px;align-items:center;margin-top:34px;padding:30px;border:1px dashed #4a4a4a;border-radius:16px;background:radial-gradient(ellipse at 0% 0%,#e5e5e510,transparent 60%),#101010}
+.tip-icons{display:flex;align-items:center;gap:14px;color:#9a9a9a;font-size:22px}
+.tip-icons img{border-radius:12px;display:block}
+.tip-widget{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid #444;background:#ffffff08;color:#d6d6d6;font-size:22px}
+.timeline-tip h3{font-family:Manrope,sans-serif;font-weight:500;font-size:22px;letter-spacing:-.7px;margin:12px 0 8px}
+.timeline-tip p{margin:0;color:#a8a8a8;font-size:14px;line-height:1.85;max-width:720px}
+.timeline-tip .project-actions{margin-top:20px}
+.timeline-tip .primary-cta{padding:13px 19px}
+.timeline-tip .ghost-cta{padding:13px 19px}
+@media(max-width:700px){.timeline:before{left:5px}.t-item>div{padding:18px}.t-item:before{left:-1px;top:6px}.t-item time{padding-top:0}.timeline-tip{grid-template-columns:1fr;padding:22px}.t-item:hover>div{transform:none}}
+html[data-motion="reduced"] .t-item:hover>div{transform:none}
+@media(hover:none){.t-item:hover>div{transform:none}}
